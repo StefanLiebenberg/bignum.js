@@ -7,18 +7,15 @@
 
 goog.provide('sage.bignum');
 goog.require('sage.bignum.BigNumber');
+goog.require('sage.bignum.type');
 
 
-/**
- * @typedef {sage.bignum.BigNumber|number|string}
- */
-sage.bignum.Convertable;
 
 
 /**
  * Converts a number to bignum.
  *
- * @param {sage.bignum.Convertable} number
+ * @param {sage.bignum.type.Convertable} number
  *        A value convertable to bignumber format.
  *
  * @return {sage.bignum.BigNumber}
@@ -39,10 +36,10 @@ sage.bignum.convert = function(number) {
  *    EG.
  *       sage.bignum.add(a, b) would be similiar to (a + b).
  *
- * @param {sage.bignum.Convertable} a
+ * @param {sage.bignum.type.Convertable} a
  *        A bignumber.
  *
- * @param {sage.bignum.Convertable} b
+ * @param {sage.bignum.type.Convertable} b
  *        A bignumber.
  *
  * @return {sage.bignum.BigNumber}
@@ -61,10 +58,10 @@ sage.bignum.add = function(a, b) {
  *    EG.
  *       sage.bignum.subtract(a, b) would be similiar to (a - b).
  *
- * @param {sage.bignum.Convertable} a
+ * @param {sage.bignum.type.Convertable} a
  *        A bignumber.
  *
- * @param {sage.bignum.Convertable} b
+ * @param {sage.bignum.type.Convertable} b
  *        A bignumber.
  *
  * @return {sage.bignumb.BigNumber}
@@ -83,10 +80,10 @@ sage.bignum.subtract = function(a, b) {
  *    EG.
  *       sage.bignum.multiply(a, b) would be similiar to (a * b).
  *
- * @param {sage.bignum.Convertable} a
+ * @param {sage.bignum.type.Convertable} a
  *        A bignumber.
  *
- * @param {sage.bignum.Convertable} b
+ * @param {sage.bignum.type.Convertable} b
  *        A bignumber.
  *
  * @return {sage.bignumb.BigNumber}
@@ -105,10 +102,10 @@ sage.bignum.multiply = function(a, b) {
  *    EG.
  *       sage.bignum.devide(a, b) would be similiar to (a / b).
  *
- * @param {sage.bignum.Convertable} a
+ * @param {sage.bignum.type.Convertable} a
  *        A bignumber.
  *
- * @param {sage.bignum.Convertable} b
+ * @param {sage.bignum.type.Convertable} b
  *        A bignumber.
  *
  * @return {sage.bignumb.BigNumber}
